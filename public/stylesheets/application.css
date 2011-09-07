@@ -1,0 +1,36 @@
+body {
+  background: url(../images/AtTheForefrontBackground.png);
+  padding: 0px;
+  margin: 0px; }
+
+.clear {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.header {
+  width: 75%;
+  height: 209px;
+  margin: 40px auto 0 auto;
+  padding: 0px; }
+  .header .logo {
+    background: url(../images/AtTheForefrontLogo.png) no-repeat 0 -209px;
+    height: 209px;
+    width: 209px;
+    opacity: 0.6;
+    margin: 0px; }
+  .header a.logoFull {
+    background: url(../images/AtTheForefrontLogo.png) no-repeat 0 0;
+    height: 209px;
+    width: 209px;
+    position: relative;
+    display: block;
+    top: -209px;
+    opacity: 0;
+    -webkit-transition: 0.4s opacity ease-in-out;
+    -moz-transition: 0.4s opacity ease-in-out;
+    -o-transition: 0.4s opacity ease-in-out;
+    transition: 0.4s opacity ease-in-out; }
+    .header a.logoFull:hover {
+      opacity: 1; }

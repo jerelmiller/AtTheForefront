@@ -1,0 +1,46 @@
+
+@mixin transition($time, $element: all, $easing: ease-in-out)
+  -webkit-transition: $element $time $easing
+  -moz-transition: $element $time $easing
+  -o-transition: $element $time $easing
+  transition: $element $time $easing 
+
+body
+  background: url(../images/AtTheForefrontBackground.png)
+  padding: 0px
+  margin: 0px
+
+
+.clear
+  clear: both
+
+.left
+  float: left
+
+
+.header
+  //border: 1px solid black
+  width: 75%
+  height: 209px
+  margin: 40px auto 0 auto
+  padding: 0px
+  .logo
+    background: url(../images/AtTheForefrontLogo.png) no-repeat 0 -209px
+    height: 209px
+    width: 209px
+    opacity: .6
+    //border: 1px solid
+    margin: 0px
+
+  a.logoFull
+    background: url(../images/AtTheForefrontLogo.png) no-repeat 0 0
+    height: 209px
+    width: 209px
+    position: relative
+    display: block
+    top: -209px
+    //border: 1px solid
+    opacity: 0
+    @include transition(opacity, .4s)
+    &:hover
+      opacity: 1
