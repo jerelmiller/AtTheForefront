@@ -3,6 +3,11 @@ AtTheForefront::Application.routes.draw do
   root :to => "home#index"
   get "home/index"
 
+  match '/music' => 'home#music'
+  match '/tour' => 'home#tour'
+  match '/about' => 'home#about'
+  match '/contact' => 'home#contact'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

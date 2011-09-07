@@ -1,6 +1,14 @@
 .header
   
-  .logo
-  = link_to raw('<span class="logoLink"></span>'), root_path, :class => 'logoFull'
+  .logo.left
+  = link_to '', root_path, :class => 'logoFull left'
 
   .clear 
+  %ul.menu.right
+    %li=link_to 'Music', music_path
+    %li=link_to 'Tour', tour_path  
+    %li=link_to 'About', about_path
+    %li= link_to 'Contact', contact_path
+    
+
+  
