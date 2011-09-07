@@ -1,7 +1,8 @@
 body {
   background: url(../images/AtTheForefrontBackground.png);
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  font-family: "Lucida Sans"; }
 
 a {
   text-decoration: none;
@@ -55,7 +56,7 @@ a {
     top: -73px; }
     .header ul.menu li {
       display: inline-block;
-      width: 120px;
+      width: 130px;
       height: 50px;
       line-height: 1.9em;
       opacity: 0.5;

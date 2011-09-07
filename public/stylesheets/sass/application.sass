@@ -19,6 +19,7 @@ body
   background: url(../images/AtTheForefrontBackground.png)
   padding: 0px
   margin: 0px
+  font-family: 'Lucida Sans'
 
 a
   text-decoration: none
@@ -39,9 +40,6 @@ a
 
 
 .header
-  //background: url(../images/AtTheForefrontBackground.png)
-  //-webkit-box-shadow: 2px 2px 2px #222
-  //box-shadow: 0px 0px 10px #222
   width: 75%
   height: 209px
   margin: 40px auto 0px auto
@@ -78,11 +76,10 @@ a
     //border: 1px solid
     li
       display: inline-block
-      width: 120px
+      width: 130px
       height: 50px
       line-height: 1.9em   
       opacity: .5   
-      //margin-right: 50px
       @include transition(.2s, all, linear)
       &:hover
         @include box_shadow(0px, 1px, 5px, #222, inset)
