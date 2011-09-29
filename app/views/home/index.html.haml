@@ -14,16 +14,17 @@
         Follow us on Facebook and Twitter!
         .clear
         .socialContainer.right
-          #like.right
+          #like.left
             %script
               (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(    document,     'script', 'facebook-jssdk'));
             %fb:like{:href => 'http://www.facebook.com/attheforefront', :send => 'false', :layout => 'box_count', :width => '50', :show_faces => 'false', :font => 'lucida grande'}
-          #tweet.left
+          #tweet.right
             =link_to 'Tweet', 'https://twitter.com/share', :class => 'twitter-share-button', "data-count" => 'vertical', "data-text" => 'Check out At The Forefron\'t website!'
             %script{:type => 'text/javascript', :src => 'http://platform.twitter.com/widgets.js'}
         .clear
         .icons.right
-          = link_to image_tag('/images/facebook.png'), 'http://www.facebook.com/attheforefront', :target => '_blank', :class => 'right'
           = link_to image_tag('/images/twitter.png'), 'http://www.twitter.com/attheforefront', :target => '_blank', :class => 'right'
+          = link_to image_tag('/images/facebook.png'), 'http://www.facebook.com/attheforefront', :target => '_blank', :class => 'right'
+          
         
     .clear
