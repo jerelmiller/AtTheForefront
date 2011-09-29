@@ -7,6 +7,7 @@ AtTheForefront::Application.routes.draw do
   match '/tour' => 'home#tour'
   match '/about' => 'home#about'
   match '/contact' => 'home#contact'
+  match '/photos' => 'home#photos'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

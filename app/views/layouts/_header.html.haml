@@ -3,12 +3,12 @@
   .logo.left
   = link_to '', root_path, :class => 'logoFull left'
 
-  .clear 
   %ul.menu.right
-    %li=link_to 'Music', music_path
-    %li=link_to 'Tour', tour_path  
-    %li=link_to 'About', about_path
-    %li= link_to 'Contact', contact_path
+    %li#aboutnav=link_to 'About', about_path
+    %li#musicnav=link_to 'Music', music_path
+    %li#photosnav=link_to 'Photos', photos_path
+    %li#tournav=link_to 'Tour', tour_path  
+    %li#contactnav= link_to 'Contact', contact_path
     
 
   
