@@ -121,18 +121,18 @@ a {
             -webkit-box-shadow: 0 1px 4px #222222;
             -webkit-transform: rotate(0.2deg); }
       .contentContainer .content .rightColumn .social {
-        width: 453px;
+        width: 300px;
         margin-top: 20px;
-        background: #aaaaaa;
         padding: 5px 10px;
-        border-radius: 2px; }
+        border-radius: 2px;
+        text-align: right; }
         .contentContainer .content .rightColumn .social .icons {
           margin-top: 5px;
           width: 250px; }
           .contentContainer .content .rightColumn .social .icons img {
-            height: 50px;
-            width: 50px;
-            margin-right: 50px;
+            height: 60px;
+            width: 60px;
+            margin-left: 42px;
             margin-bottom: 10px; }
         .contentContainer .content .rightColumn .social .socialContainer {
           width: 160px;
